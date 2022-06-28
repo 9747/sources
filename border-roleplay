@@ -1,0 +1,106 @@
+if game.PlaceId == 885450884 then --game id
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("BALLS HUB", "DarkTheme")
+
+   --ammo
+    local Rock = Window:NewTab("Guns")
+    local RockSection = Rock:NewSection("Gun Mods")
+    RockSection:NewButton("inf ammo", "you know ;)", function()
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.ammo = 100000
+            end
+        end
+    end)
+
+    --firerate
+    RockSection:NewButton("no shooting cooldown", "you know ;)", function()
+        print("teamkill starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.fireRate = 0
+            end
+        end
+        print("teamkill working")
+    end)
+
+    --spread
+    RockSection:NewButton("No spread", "you know ;)", function()
+        print("Spread starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.spread = 0
+            end
+        end
+        print("spread working")
+    end)
+
+    --range
+    RockSection:NewButton("range", "you know ;)", function()
+        print("range starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.range = 10000
+            end
+        end
+        print("range working")
+    end)
+
+    --teamkill
+    RockSection:NewButton("team kill on", "you know ;)", function()
+        print("teamkill starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.teamKill = true
+            end
+        end
+        print("teamkill working")
+    end)
+
+        --fast reload
+    RockSection:NewButton("Fast Reload", "you know ;)", function()
+        print("fast reload starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.reloadTime = 0
+            end
+        end
+        print("fast reload working")
+    end)
+
+    --auto gun
+    RockSection:NewButton("automatic gun", "you know ;)", function()
+        print("auto gun starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.shootType = "Auto"
+            end
+        end
+        print("auto gun working")
+    end)
+
+    --roll
+    RockSection:NewButton("roll", "you know ;)", function()
+        print("teamkill starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.roll = true
+                v.rollCooldown = 0
+            end
+        end
+        print("teamkill working")
+    end)
+
+ --player shit
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player Mods")
+    PlayerSection:NewButton("team kill on", "you know ;)", function()
+        print("teamkill starting")
+        for i, v in next, getgc(true) do
+            if type(v) == "table" and rawget(v, "damage") then
+                v.doubleJump = true
+            end
+        end
+        print("teamkill working")
+    end)
+end
