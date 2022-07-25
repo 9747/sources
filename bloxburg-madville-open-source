@@ -1,0 +1,692 @@
+-- // Doesnt Work, Consider Updating Script For It To Work ;(
+
+-- // Overall Sexy UI
+
+local MadburgUI = Instance.new("ScreenGui")
+local Back = Instance.new("Frame")
+local MainFrame = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local Icon = Instance.new("ImageLabel")
+local MainContent = Instance.new("Frame")
+local PizzaBaker = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Top = Instance.new("TextLabel")
+local Lower = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local ESPToggle = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local Toggle = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Checkmark = Instance.new("ImageLabel")
+local ESPBoxes = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+local Text_2 = Instance.new("TextLabel")
+local Toggle_2 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Checkmark_2 = Instance.new("ImageLabel")
+local ESPTracers = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Text_3 = Instance.new("TextLabel")
+local Toggle_3 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Checkmark_3 = Instance.new("ImageLabel")
+local ESPInfo = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local Text_4 = Instance.new("TextLabel")
+local Toggle_4 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Checkmark_4 = Instance.new("ImageLabel")
+local TopBarLabel = Instance.new("TextLabel")
+
+MadburgUI.Name = "MadburgUI"
+MadburgUI.Parent = game.CoreGui
+MadburgUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Back.Name = "Back"
+Back.Parent = MadburgUI
+Back.BackgroundColor3 = Color3.fromRGB(211, 211, 211)
+Back.BackgroundTransparency = 0.650
+Back.BorderSizePixel = 0
+Back.Position = UDim2.new(0.431215286, 0, 0.100613497, 0)
+Back.Size = UDim2.new(0, 508, 0, 591)
+Back.Active = true
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Back
+MainFrame.BackgroundColor3 = Color3.fromRGB(28, 26, 68)
+MainFrame.BorderColor3 = Color3.fromRGB(182, 182, 182)
+MainFrame.Position = UDim2.new(0.00393214729, 0, 0.00277163275, 0)
+MainFrame.Size = UDim2.new(0, 504, 0, 587)
+
+TopBar.Name = "TopBar"
+TopBar.Parent = MainFrame
+TopBar.BackgroundColor3 = Color3.fromRGB(28, 26, 68)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 504, 0, 80)
+
+Icon.Name = "Icon"
+Icon.Parent = TopBar
+Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Icon.BorderSizePixel = 0
+Icon.Position = UDim2.new(0.0496031754, 0, 0.125, 0)
+Icon.Size = UDim2.new(0, 60, 0, 60)
+Icon.Image = "http://www.roblox.com/asset/?id=9939920624"
+
+MainContent.Name = "MainContent"
+MainContent.Parent = TopBar
+MainContent.BackgroundColor3 = Color3.fromRGB(34, 28, 74)
+MainContent.BorderColor3 = Color3.fromRGB(182, 182, 182)
+MainContent.BorderSizePixel = 0
+MainContent.Position = UDim2.new(0.117063493, 0, 1.42659712, 0)
+MainContent.Size = UDim2.new(0, 386, 0, 437)
+
+PizzaBaker.Name = "PizzaBaker"
+PizzaBaker.Parent = MainContent
+PizzaBaker.BackgroundColor3 = Color3.fromRGB(33, 31, 83)
+PizzaBaker.Position = UDim2.new(0.018134715, 0, 0.0137299774, 0)
+PizzaBaker.Size = UDim2.new(0, 373, 0, 73)
+
+TextButton.Parent = PizzaBaker
+TextButton.BackgroundColor3 = Color3.fromRGB(109, 92, 211)
+TextButton.Position = UDim2.new(0.0227743145, 0, 0.753675401, 0)
+TextButton.Size = UDim2.new(0, 356, 0, 17)
+TextButton.Font = Enum.Font.SourceSansLight
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(28, 26, 68)
+TextButton.TextSize = 17.000
+
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = TextButton
+
+Top.Name = "Top"
+Top.Parent = PizzaBaker
+Top.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top.BackgroundTransparency = 1.000
+Top.Position = UDim2.new(0.0643431693, 0, 0, 0)
+Top.Size = UDim2.new(0, 56, 0, 29)
+Top.Font = Enum.Font.SourceSansLight
+Top.Text = "Pizza Baker"
+Top.TextColor3 = Color3.fromRGB(109, 92, 211)
+Top.TextSize = 20.000
+
+Lower.Name = "Lower"
+Lower.Parent = PizzaBaker
+Lower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lower.BackgroundTransparency = 1.000
+Lower.Position = UDim2.new(0.0214477219, 0, 0.397260278, 0)
+Lower.Size = UDim2.new(0, 200, 0, 17)
+Lower.Font = Enum.Font.SourceSansLight
+Lower.Text = "Autofarm for the job \"Pizza Baker\""
+Lower.TextColor3 = Color3.fromRGB(109, 92, 211)
+Lower.TextSize = 17.000
+
+UICorner_2.CornerRadius = UDim.new(0, 13)
+UICorner_2.Parent = PizzaBaker
+
+UICorner_3.Parent = MainContent
+
+ESPToggle.Name = "ESPToggle"
+ESPToggle.Parent = MainContent
+ESPToggle.BackgroundColor3 = Color3.fromRGB(33, 31, 83)
+ESPToggle.Position = UDim2.new(0.018134715, 0, 0.237986267, 0)
+ESPToggle.Size = UDim2.new(0, 373, 0, 49)
+
+UICorner_4.CornerRadius = UDim.new(0, 13)
+UICorner_4.Parent = ESPToggle
+
+Text.Name = "Text"
+Text.Parent = ESPToggle
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(0.0214477219, 0, 0.183673471, 0)
+Text.Size = UDim2.new(0, 56, 0, 29)
+Text.Font = Enum.Font.SourceSansLight
+Text.Text = "ESP"
+Text.TextColor3 = Color3.fromRGB(109, 92, 211)
+Text.TextSize = 20.000
+
+Toggle.Name = "Toggle"
+Toggle.Parent = ESPToggle
+Toggle.BackgroundColor3 = Color3.fromRGB(54, 69, 114)
+Toggle.Position = UDim2.new(0.902131021, 0, 0.214396581, 0)
+Toggle.Size = UDim2.new(0, 28, 0, 28)
+Toggle.Font = Enum.Font.SourceSansLight
+Toggle.Text = ""
+Toggle.TextColor3 = Color3.fromRGB(109, 92, 211)
+Toggle.TextSize = 17.000
+
+UICorner_5.CornerRadius = UDim.new(0, 7)
+UICorner_5.Parent = Toggle
+
+Checkmark.Name = "Checkmark"
+Checkmark.Parent = Toggle
+Checkmark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkmark.BackgroundTransparency = 1.000
+Checkmark.Position = UDim2.new(0.214285672, 0, 0.214285731, 0)
+Checkmark.Size = UDim2.new(0, 16, 0, 16)
+Checkmark.Visible = false
+Checkmark.Image = "http://www.roblox.com/asset/?id=9952282302"
+
+ESPBoxes.Name = "ESPBoxes"
+ESPBoxes.Parent = MainContent
+ESPBoxes.BackgroundColor3 = Color3.fromRGB(33, 31, 83)
+ESPBoxes.Position = UDim2.new(0.018134715, 0, 0.375286043, 0)
+ESPBoxes.Size = UDim2.new(0, 373, 0, 49)
+
+UICorner_6.CornerRadius = UDim.new(0, 13)
+UICorner_6.Parent = ESPBoxes
+
+Text_2.Name = "Text"
+Text_2.Parent = ESPBoxes
+Text_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_2.BackgroundTransparency = 1.000
+Text_2.Position = UDim2.new(0.0804289579, 0, 0.20408164, 0)
+Text_2.Size = UDim2.new(0, 50, 0, 29)
+Text_2.Font = Enum.Font.SourceSansLight
+Text_2.Text = "ESP Boxes"
+Text_2.TextColor3 = Color3.fromRGB(109, 92, 211)
+Text_2.TextSize = 20.000
+
+Toggle_2.Name = "Toggle"
+Toggle_2.Parent = ESPBoxes
+Toggle_2.BackgroundColor3 = Color3.fromRGB(54, 69, 114)
+Toggle_2.Position = UDim2.new(0.902131021, 0, 0.214396581, 0)
+Toggle_2.Size = UDim2.new(0, 28, 0, 28)
+Toggle_2.Font = Enum.Font.SourceSansLight
+Toggle_2.Text = ""
+Toggle_2.TextColor3 = Color3.fromRGB(109, 92, 211)
+Toggle_2.TextSize = 17.000
+
+UICorner_7.CornerRadius = UDim.new(0, 7)
+UICorner_7.Parent = Toggle_2
+
+Checkmark_2.Name = "Checkmark"
+Checkmark_2.Parent = Toggle_2
+Checkmark_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkmark_2.BackgroundTransparency = 1.000
+Checkmark_2.Position = UDim2.new(0.214285672, 0, 0.214285731, 0)
+Checkmark_2.Size = UDim2.new(0, 16, 0, 16)
+Checkmark_2.Visible = false
+Checkmark_2.Image = "http://www.roblox.com/asset/?id=9952282302"
+
+ESPTracers.Name = "ESPTracers"
+ESPTracers.Parent = MainContent
+ESPTracers.BackgroundColor3 = Color3.fromRGB(33, 31, 83)
+ESPTracers.Position = UDim2.new(0.018134715, 0, 0.519450784, 0)
+ESPTracers.Size = UDim2.new(0, 373, 0, 49)
+
+UICorner_8.CornerRadius = UDim.new(0, 13)
+UICorner_8.Parent = ESPTracers
+
+Text_3.Name = "Text"
+Text_3.Parent = ESPTracers
+Text_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_3.BackgroundTransparency = 1.000
+Text_3.Position = UDim2.new(0.0804289505, 0, 0.183673471, 0)
+Text_3.Size = UDim2.new(0, 56, 0, 29)
+Text_3.Font = Enum.Font.SourceSansLight
+Text_3.Text = "ESP Tracers"
+Text_3.TextColor3 = Color3.fromRGB(109, 92, 211)
+Text_3.TextSize = 20.000
+
+Toggle_3.Name = "Toggle"
+Toggle_3.Parent = ESPTracers
+Toggle_3.BackgroundColor3 = Color3.fromRGB(54, 69, 114)
+Toggle_3.Position = UDim2.new(0.902131021, 0, 0.214396581, 0)
+Toggle_3.Size = UDim2.new(0, 28, 0, 28)
+Toggle_3.Font = Enum.Font.SourceSansLight
+Toggle_3.Text = ""
+Toggle_3.TextColor3 = Color3.fromRGB(109, 92, 211)
+Toggle_3.TextSize = 17.000
+
+UICorner_9.CornerRadius = UDim.new(0, 7)
+UICorner_9.Parent = Toggle_3
+
+Checkmark_3.Name = "Checkmark"
+Checkmark_3.Parent = Toggle_3
+Checkmark_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkmark_3.BackgroundTransparency = 1.000
+Checkmark_3.Position = UDim2.new(0.214285672, 0, 0.214285731, 0)
+Checkmark_3.Size = UDim2.new(0, 16, 0, 16)
+Checkmark_3.Visible = false
+Checkmark_3.Image = "http://www.roblox.com/asset/?id=9952282302"
+
+ESPInfo.Name = "ESPInfo"
+ESPInfo.Parent = MainContent
+ESPInfo.BackgroundColor3 = Color3.fromRGB(33, 31, 83)
+ESPInfo.Position = UDim2.new(0.018134715, 0, 0.65675056, 0)
+ESPInfo.Size = UDim2.new(0, 373, 0, 49)
+
+UICorner_10.CornerRadius = UDim.new(0, 13)
+UICorner_10.Parent = ESPInfo
+
+Text_4.Name = "Text"
+Text_4.Parent = ESPInfo
+Text_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text_4.BackgroundTransparency = 1.000
+Text_4.Position = UDim2.new(0.050938338, 0, 0.20408164, 0)
+Text_4.Size = UDim2.new(0, 56, 0, 29)
+Text_4.Font = Enum.Font.SourceSansLight
+Text_4.Text = "ESP Info"
+Text_4.TextColor3 = Color3.fromRGB(109, 92, 211)
+Text_4.TextSize = 20.000
+
+Toggle_4.Name = "Toggle"
+Toggle_4.Parent = ESPInfo
+Toggle_4.BackgroundColor3 = Color3.fromRGB(54, 69, 114)
+Toggle_4.Position = UDim2.new(0.902131021, 0, 0.214396581, 0)
+Toggle_4.Size = UDim2.new(0, 28, 0, 28)
+Toggle_4.Font = Enum.Font.SourceSansLight
+Toggle_4.Text = ""
+Toggle_4.TextColor3 = Color3.fromRGB(109, 92, 211)
+Toggle_4.TextSize = 17.000
+
+UICorner_11.CornerRadius = UDim.new(0, 7)
+UICorner_11.Parent = Toggle_4
+
+Checkmark_4.Name = "Checkmark"
+Checkmark_4.Parent = Toggle_4
+Checkmark_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkmark_4.BackgroundTransparency = 1.000
+Checkmark_4.Position = UDim2.new(0.214285672, 0, 0.214285731, 0)
+Checkmark_4.Size = UDim2.new(0, 16, 0, 16)
+Checkmark_4.Visible = false
+Checkmark_4.Image = "http://www.roblox.com/asset/?id=9952282302"
+
+TopBarLabel.Name = "TopBarLabel"
+TopBarLabel.Parent = TopBar
+TopBarLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopBarLabel.BackgroundTransparency = 1.000
+TopBarLabel.Position = UDim2.new(0.301587313, 0, 0.300000012, 0)
+TopBarLabel.Size = UDim2.new(0, 200, 0, 31)
+TopBarLabel.Font = Enum.Font.SourceSansLight
+TopBarLabel.Text = "Madburg Lite"
+TopBarLabel.TextColor3 = Color3.fromRGB(109, 92, 211)
+TopBarLabel.TextSize = 23.000
+
+-- Scripts:
+
+local function WMZRYEQ_fake_script() -- TextButton.RippleFade 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		local player = game:GetService("Players").LocalPlayer;
+		local job_manager = require(player.PlayerGui.MainGUI.Scripts.JobHandler);
+	
+		--// grab remotes 
+	
+		local remotes = {};
+	
+		local remote_added = getconnections(game:GetService("ReplicatedStorage").Modules.DataService.DescendantAdded)[1].Function;
+		local remote_keys = getupvalue(remote_added, 1);
+	
+		for remote_key, remote_name in next, getupvalue(getupvalue(remote_added, 2), 1) do
+			remotes[remote_name:sub(1, 2) == "F_" and remote_name:sub(3) or remote_name] = remote_keys[remote_key];
+		end;
+	
+		--// correct order hook
+	
+		local old_namecall;
+		old_namecall = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+			if self == remotes.JobCompleted then
+				local arguments = {...};
+				local order_data = arguments[1];
+	
+				if type(order_data) == "table" then
+					if checkcaller() and getnamecallmethod() == "FireServer" and rawget(order_data, "Order") then
+						local target_workstation = rawget(order_data, "Workstation");
+	
+						if target_workstation and target_workstation.Parent.Name == "BakerWorkstations"then
+							order_data.Order = {
+								true, 
+								true, 
+								true, 
+								target_workstation.Order.Value
+							};
+	
+							return old_namecall(self, unpack(arguments));
+						end;
+					end;
+				end;
+			end;
+	
+			return old_namecall(self, ...);
+		end));
+	
+		--// functions 
+	
+		local function get_nearest_crate()
+			local nearest_crate;
+			local nearest_distance = math.huge;
+	
+			for index, crate_object in next, workspace.Environment.Locations.PizzaPlanet.IngredientCrates:GetChildren() do
+				local distance = (player.Character.HumanoidRootPart.Position - crate_object.Position).Magnitude;
+	
+				if distance < nearest_distance then
+					nearest_distance = distance;
+					nearest_crate = crate_object;
+				end;
+			end;
+	
+			return nearest_crate;
+		end;
+	
+		local function hide_fail_indicator(baker_gui)
+			local baker_gui_overlay = baker_gui:FindFirstChild("Overlay");
+	
+			if baker_gui_overlay then 
+				local fail_indicator_gui = baker_gui_overlay:FindFirstChild("false");
+	
+				if fail_indicator_gui then 
+					fail_indicator_gui.ImageRectOffset = Vector2.new(0, 0)
+					fail_indicator_gui.ImageColor3 = Color3.new(0, 255, 0)
+				end
+			end
+		end;
+	
+		local function get_dual_station(current_workstation)
+			for index, station in next, current_workstation.Parent:GetChildren() do
+				if station ~= current_workstation then
+					local distance = (station.PrimaryPart.Position - current_workstation.PrimaryPart.Position).Magnitude;
+	
+					if distance <= 11 then 
+						local main_baker_display = station.OrderDisplay.DisplayMain;
+						local baker_gui = main_baker_display:FindFirstChild("BakerGUI");
+	
+						if baker_gui and (not baker_gui.Used.Visible or baker_gui.Used.TitleLabel.Text == "Too far") then
+							return station;
+						end;
+					end;
+				end;
+			end;
+		end;
+	
+		local function restock_ingredients(current_workstation)
+			local nearest_crate = get_nearest_crate();
+	
+			if nearest_crate then
+				player.Character.HumanoidRootPart.CFrame = nearest_crate.CFrame + Vector3.new(6, 0, 0);
+	
+				repeat
+					remotes.TakeIngredientCrate:FireServer({
+						Object = nearest_crate
+					});
+	
+					wait();
+				until player.Character:FindFirstChild("Ingredient Crate");
+	
+				player.Character.HumanoidRootPart.CFrame = current_workstation.CounterTop.CFrame + Vector3.new(-7, 1.1, 0);
+	
+				repeat 
+					remotes.RestockIngredients:FireServer({
+						Workstation = current_workstation
+					});
+	
+					wait();
+				until current_workstation.Order.IngredientsLeft.Value > 0;
+			end;
+		end;
+	
+		--// main autofarm loop
+	
+		while task.wait(0.1) do 
+			if job_manager:GetJob() == "PizzaPlanetBaker" then
+				local pizza_planet = workspace.Environment.Locations:FindFirstChild("PizzaPlanet");
+	
+				if pizza_planet then 
+					local baker_workstations = pizza_planet:FindFirstChild("BakerWorkstations");
+	
+					if baker_workstations then
+						for index, baker_station in next, baker_workstations:GetChildren() do
+							local main_baker_display = baker_station.OrderDisplay.DisplayMain;
+							local baker_gui = main_baker_display:FindFirstChild("BakerGUI");
+	
+							if baker_gui and not baker_gui.Used.Visible then
+								local dual_station = get_dual_station(baker_station);
+	
+								if dual_station then -- get middle position of 2 stations
+									local main_position, dual_position = baker_station.PrimaryPart.Position, dual_station.PrimaryPart.Position;
+									local middle_cframe = CFrame.new(main_position, dual_position) * CFrame.new(0, 0, -(main_position - dual_position).Magnitude / 2);
+	
+									player.Character.HumanoidRootPart.CFrame = middle_cframe + Vector3.new(-7, 1.1, 0);
+								end;
+	
+								if baker_station.Order.IngredientsLeft.Value == 0 then
+									restock_ingredients(baker_station);
+								end;
+	
+								hide_fail_indicator(baker_gui);
+	
+								local baker_gui_frame = baker_gui:FindFirstChild("Frame");
+	
+								if baker_gui_frame then
+									local baker_frame_done_button = baker_gui_frame:FindFirstChild("Done");
+	
+									if baker_frame_done_button then
+										firesignal(baker_frame_done_button.Activated);
+									end;
+								end;
+							end;
+						end;
+					end;
+				end;
+			end;
+		end;
+	end)
+end
+coroutine.wrap(WMZRYEQ_fake_script)()
+local function DKEWW_fake_script() -- Toggle.Toggle 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxleaks/wdwdwd/main/white-esp"))()
+	
+	ESP:Toggle(true)
+	ESP.Players = false
+	ESP.Tracers = false
+	ESP.Boxes = false
+	ESP.Names = false
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.Checkmark.Visible = true
+		end
+		if toggle == false then 
+			script.Parent.Checkmark.Visible = false
+		end
+	
+		if toggle == true then
+			ESP.Players = true
+		end
+		if toggle == false then 
+			ESP.Players = false
+		end
+	end)
+end
+coroutine.wrap(DKEWW_fake_script)()
+local function UIBR_fake_script() -- Toggle_2.Toggle 
+	local script = Instance.new('LocalScript', Toggle_2)
+
+	local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxleaks/wdwdwd/main/white-esp"))()
+	
+	ESP:Toggle(true)
+	ESP.Players = false
+	ESP.Tracers = false
+	ESP.Boxes = false
+	ESP.Names = false
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.Checkmark.Visible = true
+		end
+		if toggle == false then 
+			script.Parent.Checkmark.Visible = false
+		end
+	
+		if toggle == true then
+			ESP.Boxes = true
+		end
+		if toggle == false then 
+			ESP.Boxes = false
+		end
+	end)
+end
+coroutine.wrap(UIBR_fake_script)()
+local function IWASEMC_fake_script() -- Toggle_3.Toggle 
+	local script = Instance.new('LocalScript', Toggle_3)
+
+	local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxleaks/wdwdwd/main/white-esp"))()
+	
+	ESP:Toggle(true)
+	ESP.Players = false
+	ESP.Tracers = false
+	ESP.Boxes = false
+	ESP.Names = false
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.Checkmark.Visible = true
+		end
+		if toggle == false then 
+			script.Parent.Checkmark.Visible = false
+		end
+	
+		if toggle == true then
+			ESP.Tracers = true
+		end
+		if toggle == false then 
+			ESP.Tracers = false
+		end
+	end)
+end
+coroutine.wrap(IWASEMC_fake_script)()
+local function GIEWF_fake_script() -- Toggle_4.Toggle 
+	local script = Instance.new('LocalScript', Toggle_4)
+
+	local ESP = loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxleaks/wdwdwd/main/white-esp"))()
+	
+	ESP:Toggle(true)
+	ESP.Players = false
+	ESP.Tracers = false
+	ESP.Boxes = false
+	ESP.Names = false
+	
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.Checkmark.Visible = true
+		end
+		if toggle == false then 
+			script.Parent.Checkmark.Visible = false
+		end
+	
+		if toggle == true then
+			ESP.Names = true
+		end
+		if toggle == false then 
+			ESP.Names = false
+		end
+	end)
+end
+coroutine.wrap(GIEWF_fake_script)()
+local function RSCJCJX_fake_script() -- Back.Drag 
+	local script = Instance.new('LocalScript', Back)
+
+	local UserInputService = game:GetService("UserInputService")
+	local runService = (game:GetService("RunService"));
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	function Lerp(a, b, m)
+		return a + (b - a) * m
+	end;
+	
+	local lastMousePos
+	local lastGoalPos
+	local DRAG_SPEED = (8);
+	function Update(dt)
+		if not (startPos) then return end;
+		if not (dragging) and (lastGoalPos) then
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+			return 
+		end;
+	
+		local delta = (lastMousePos - UserInputService:GetMouseLocation())
+		local xGoal = (startPos.X.Offset - delta.X);
+		local yGoal = (startPos.Y.Offset - delta.Y);
+		lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+		gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+	end;
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+			lastMousePos = UserInputService:GetMouseLocation()
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	runService.Heartbeat:Connect(Update)
+end
+coroutine.wrap(RSCJCJX_fake_script)()
+local function QYMC_fake_script() -- Back.Key 
+	local script = Instance.new('LocalScript', Back)
+
+	local frame = script.Parent -- path to the frame
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse();
+	
+	mouse.KeyDown:connect(function(key)
+		key = key:lower()
+		if key == 'p' then
+			frame.Visible = not frame.Visible
+		end
+	end)
+end
+coroutine.wrap(QYMC_fake_script)()
